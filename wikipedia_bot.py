@@ -53,6 +53,7 @@ def getwiki(s):
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
     print('User wants to start')
+    print(m)
     bot.send_message(m.chat.id, 'Отправьте мне любое слово, и я найду его значение на Wikipedia')
 
 
