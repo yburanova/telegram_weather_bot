@@ -58,7 +58,10 @@ def start(m, res=False):
 # Получение сообщений от юзера
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
-    bot.send_message(message.chat.id, getwiki(message.text))
+    bot.send_message(message.chat.id,
+                     'Hello, world!'
+                     #getwiki(message.text)
+                     )
 
 
 # Запускаем бота
