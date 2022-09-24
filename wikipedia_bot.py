@@ -3,7 +3,7 @@ import wikipedia
 import re
 import os
 
-token = os.environ["TOKEN"]
+token = os.environ.get("TOKEN", "token not found!")
 bot = telebot.TeleBot(token)
 wikipedia.set_lang("ru")
 
