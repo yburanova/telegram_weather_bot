@@ -65,4 +65,6 @@ def handle_text(message):
 
 
 # Запускаем бота
-bot.polling(none_stop=True, interval=0)
+if __name__ == '__main__':
+    bot.remove_webhook()
+    bot.polling(none_stop=True, interval=0)
