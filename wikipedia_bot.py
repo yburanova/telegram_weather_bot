@@ -52,12 +52,14 @@ def getwiki(s):
 # Функция, обрабатывающая команду /start
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
+    print('User wants to start')
     bot.send_message(m.chat.id, 'Отправьте мне любое слово, и я найду его значение на Wikipedia')
 
 
 # Получение сообщений от юзера
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
+    print('User wrote text')
     bot.send_message(message.chat.id,
                      'Hello, world!'
                      #getwiki(message.text)
