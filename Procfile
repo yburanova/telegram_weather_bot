@@ -1,1 +1,1 @@
-worker: python3 wikipedia_bot.py
+worker: python3 weather_bot.py
