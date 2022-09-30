@@ -18,7 +18,5 @@ class WeatherOpenApiHandler:
         }
 
         response = requests.get(self.url, query_params)
-
-        print(response.json())
-
-        return "Wetter in Bobingen für heute: "
+        weather_json = response.json()
+        return weather_json
